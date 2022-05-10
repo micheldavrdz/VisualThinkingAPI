@@ -1,0 +1,32 @@
+{
+  "name": "VisualThinkingAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "linter": "node --experimental-vm-modules ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node --experimental-vm-modules ./node_modules/eslint/bin/eslint.js --fix .",
+    "server": "node --experimental-vm-modules ./lib/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micheldavrdz/VisualThinkingAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micheldavrdz/VisualThinkingAPI/issues"
+  },
+  "homepage": "https://github.com/micheldavrdz/VisualThinkingAPI#readme",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
