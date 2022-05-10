@@ -7,9 +7,9 @@ class ExplorerController {
     return StudentService.getStudents(students);
   }
 
-  static getAllCertifiedStudents() {
+  static getAllCertifiedStudentsEmails() {
     const students = Reader.readJsonfile('visualpartners.json');
-    return StudentService.getCertifiedStudents(students);
+    return StudentService.getCertifiedStudentsEmails(students);
   }
 
   static getAllStudentsCreditsAbove500() {

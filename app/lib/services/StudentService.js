@@ -3,8 +3,9 @@ class StudentService {
     return students;
   }
 
-  static getCertifiedStudents(students) {
-    return students.filter((student) => student.haveCertification === true);
+  static getCertifiedStudentsEmails(students) {
+    return students.filter((student) => student.haveCertification === true)
+      .map((student) => student.email);
   }
 
   static getStudentsCreditsAbove500(students) {

@@ -9,7 +9,7 @@ describe('Unit test for StudentService class', () => {
   });
 
   test('Test case 2 - Return all certified students', () => {
-    const students = StudentController.getAllCertifiedStudents();
+    const students = StudentController.getAllCertifiedStudentsEmails();
 
     expect(students).toBeDefined();
     expect(students.length).toBeGreaterThan(0);

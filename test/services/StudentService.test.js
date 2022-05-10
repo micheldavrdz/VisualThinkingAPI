@@ -10,9 +10,9 @@ describe('Unit test for StudentService class', () => {
     expect(students.length).toBeGreaterThan(0);
   });
 
-  test('Test case 2 - Return all certified students', () => {
+  test('Test case 2 - Return all certified students emails', () => {
     const visualpartners = Reader.readJsonfile('visualpartners.json');
-    const students = StudentService.getCertifiedStudents(visualpartners);
+    const students = StudentService.getCertifiedStudentsEmails(visualpartners);
 
     expect(students).toBeDefined();
     expect(students.length).toBeGreaterThan(0);
