@@ -21,7 +21,7 @@ describe('Unit test for StudentService class', () => {
 
   test('Test case 3 - Return all students with more than 500 credits', () => {
     const visualpartners = Reader.readJsonfile('visualpartners.json');
-    const students = StudentService.getStudentsCreditsAbove500(visualpartners);
+    const students = StudentService.getStudentsCreditsAboveCredits(visualpartners, 500);
 
     expect(students).toBeDefined();
     expect(students.length).toBeGreaterThan(0);

@@ -17,7 +17,7 @@ describe('Unit test for StudentService class', () => {
   });
 
   test('Test case 3 - Return all students with more than 500 credits', () => {
-    const students = StudentController.getAllStudentsCreditsAbove500();
+    const students = StudentController.getAllStudentsAboveCredits(500);
 
     expect(students).toBeDefined();
     expect(students.length).toBeGreaterThan(0);

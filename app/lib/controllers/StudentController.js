@@ -12,9 +12,9 @@ class ExplorerController {
     return StudentService.getCertifiedStudentsEmails(students);
   }
 
-  static getAllStudentsCreditsAbove500() {
+  static getAllStudentsAboveCredits(credits) {
     const students = Reader.readJsonfile('visualpartners.json');
-    return StudentService.getStudentsCreditsAbove500(students);
+    return StudentService.getStudentsCreditsAboveCredits(students, credits);
   }
 }
 

@@ -4,12 +4,12 @@ class StudentService {
   }
 
   static getCertifiedStudentsEmails(students) {
-    return students.filter((student) => student.haveCertification === true)
-      .map((student) => student.email);
+    const studentsCertified = students.filter((student) => student.haveCertification);
+    return studentsCertified.map((student) => student.email);
   }
 
-  static getStudentsCreditsAbove500(students) {
-    return students.filter((student) => student.credits > 500);
+  static getStudentsCreditsAboveCredits(students, credits) {
+    return students.filter((student) => student.credits > credits);
   }
 }
 
