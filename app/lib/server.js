@@ -1,4 +1,5 @@
 const express = require('express');
+const ExplorerController = require('./controllers/StudentController');
 
 const app = express();
 
@@ -9,6 +10,11 @@ app.get('/', (req, res) => {
   res.json({
     message: 'Welcome to the Visual Partner-Ship Students API',
   });
+});
+
+app.get('/v1/students/', (req, res) => {
+  const students = ExplorerController.getStudentsAllFields();
+  res.json(students);
 });
 
 app.listen(port, () => {
