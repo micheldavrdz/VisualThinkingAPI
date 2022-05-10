@@ -193,3 +193,4 @@ StudentController is used to "merge" Reader and StudentService, uses 3 static me
 * [Jest](https://jestjs.io/) - JS unit testing
 * [ESLint](https://eslint.org/) - JS Linter
 * [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) - ESLint Airbnb style guide config
+* [Github Actions](https://github.com/features/actions) - Automated Jest testing on each push
