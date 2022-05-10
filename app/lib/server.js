@@ -22,6 +22,12 @@ app.get('/v1/students/certified/emails', (req, res) => {
   res.json(students);
 });
 
+app.get('/v1/students/credits/:credits', (req, res) => {
+  const number = req.params.credits;
+  const students = ExplorerController.getAllStudentsAboveCredits(number);
+  res.json(students);
+});
+
 app.listen(port, () => {
   console.log(`Visual Partner-Ship Student API on port: ${port}`);
 });
