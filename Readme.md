@@ -31,6 +31,21 @@ The API needs the server to be running on a local port (by default this project 
 npm run server
 ```
 
+## Solution Diagram
+
+```mermaid
+  graph TD;
+      JSON_File --> Reader;
+      Reader --> StudentController;
+      StudentService --> StudentController;
+      StudentController --> Express_Server;
+      Express_Server --> API;
+      API --> Express_Server
+      API --> GET_/v1/students
+      API --> GET_/v1/students/certified/emails
+      API --> GET_/v1/students/credits/:credits
+```
+
 ## API
 
 To use the API follow the following endpoints:
@@ -83,10 +98,10 @@ localhost:3000/v1/students/certified/emails
 
 ### Students with credits above X
 
-This endpoint will show all students with credits above x number ( replace `number` with an actual number [e.g. 500] )
+This endpoint will show all students with credits above x number ( replace `:credits` with an actual number [e.g. 500] )
 
 ```
-localhost:3000/v1/students/credits/number
+localhost:3000/v1/students/credits/:credits
 ```
 
 ```
