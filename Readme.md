@@ -188,9 +188,9 @@ StudentController is used to "merge" Reader and StudentService, uses 3 static me
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/) - Runtime enviroment
-* [Express](https://expressjs.com/) - Web framework
-* [Jest](https://jestjs.io/) - JS unit testing
-* [ESLint](https://eslint.org/) - JS Linter
-* [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) - ESLint Airbnb style guide config
+* [NodeJS (16.14.2)](https://nodejs.org/en/) - Runtime enviroment
+* [Express (4.18.1)](https://expressjs.com/) - Web framework
+* [Jest (28.1.0)](https://jestjs.io/) - JS unit testing
+* [ESLint (8.2.0)](https://eslint.org/) - JS Linter
+* [eslint-config-airbnb-base (15.0.0)](https://www.npmjs.com/package/eslint-config-airbnb-base) - ESLint Airbnb style guide config
 * [Github Actions](https://github.com/features/actions) - Automated Jest testing on each push
