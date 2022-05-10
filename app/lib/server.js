@@ -1,5 +1,5 @@
 const express = require('express');
-const ExplorerController = require('./controllers/StudentController');
+const StudentController = require('./controllers/StudentController');
 
 const app = express();
 
@@ -13,18 +13,18 @@ app.get('/', (req, res) => {
 });
 
 app.get('/v1/students/', (req, res) => {
-  const students = ExplorerController.getStudentsAllFields();
+  const students = StudentController.getStudentsAllFields();
   res.json(students);
 });
 
 app.get('/v1/students/certified/emails', (req, res) => {
-  const students = ExplorerController.getAllCertifiedStudentsEmails();
+  const students = StudentController.getAllCertifiedStudentsEmails();
   res.json(students);
 });
 
 app.get('/v1/students/credits/:credits', (req, res) => {
   const number = req.params.credits;
-  const students = ExplorerController.getAllStudentsAboveCredits(number);
+  const students = StudentController.getAllStudentsAboveCredits(number);
   res.json(students);
 });
 

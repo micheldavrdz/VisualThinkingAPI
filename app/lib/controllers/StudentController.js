@@ -1,7 +1,7 @@
 const Reader = require('../utils/Reader');
 const StudentService = require('../services/StudentService');
 
-class ExplorerController {
+class StudentController {
   static getStudentsAllFields() {
     const students = Reader.readJsonfile('visualpartners.json');
     return StudentService.getStudents(students);
@@ -18,4 +18,4 @@ class ExplorerController {
   }
 }
 
-module.exports = ExplorerController;
+module.exports = StudentController;
